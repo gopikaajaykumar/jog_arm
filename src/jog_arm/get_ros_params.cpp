@@ -50,7 +50,7 @@ double get_ros_params::getIntParam(const std::string& name, ros::NodeHandle& n)
 {
   int value;
   if( !n.getParam(name, value) )
-    ROS_ERROR_STREAM("[JogCalcs::getDoubleParam] YAML config file does not contain parameter " << name);
+    ROS_ERROR_STREAM("[JogCalcs::getIntParam] YAML config file does not contain parameter " << name);
   return value;
 }
 
